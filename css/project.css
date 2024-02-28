@@ -1,267 +1,2203 @@
 .content-wrapper-div {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding-top: 80px;
-    background: #540705;
-    padding-inline: 8%;
-    gap: 40px;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   padding-top: 80px;
+   background: #540705;
+   padding-inline: 8%;
+   gap: 40px;
 }
 
 .wrap-big {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    max-width: 485px;
-    width: 100%;
-    min-height: 560px;
-    border: solid 1px red;
-    box-shadow: 0 0 5px red;
-    border-radius: 8px;
-    justify-content: space-between;
-    padding-bottom: 20px;
-    overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+   max-width: 485px;
+   width: 100%;
+   min-height: 560px;
+   border: solid 1px red;
+   box-shadow: 0 0 5px red;
+   border-radius: 8px;
+   justify-content: space-between;
+   padding-bottom: 20px;
+   overflow: hidden;
 }
-.back-btn{
-    display: flex;
-    justify-content: center;
+
+.back-btn {
+   display: flex;
+   justify-content: center;
 }
 
 
 button {
-    position: relative;
-    border: none;
-    background: transparent;
-    padding: 0;
-    cursor: pointer;
-    outline-offset: 4px;
-    -webkit-transition: -webkit-filter 250ms;
-    transition: -webkit-filter 250ms;
-    transition: filter 250ms;
-    transition: filter 250ms, -webkit-filter 250ms;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-    -ms-touch-action: manipulation;
-        touch-action: manipulation;
-   }
-   
-   .shadow {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 12px;
-    background: hsl(0deg 0% 0% / 0.25);
-    will-change: transform;
-    -webkit-transform: translateY(2px);
-        -ms-transform: translateY(2px);
-            transform: translateY(2px);
-    -webkit-transition: -webkit-transform
-       600ms
-       cubic-bezier(.3, .7, .4, 1);
-    transition: -webkit-transform
-       600ms
-       cubic-bezier(.3, .7, .4, 1);
-    transition: transform
-       600ms
-       cubic-bezier(.3, .7, .4, 1);
-    transition: transform
-       600ms
-       cubic-bezier(.3, .7, .4, 1), -webkit-transform
-       600ms
-       cubic-bezier(.3, .7, .4, 1);
-   }
-   
-   .edge {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 12px;
-    background: -webkit-gradient(
-       linear,
-       right top, left top,
-       from(hsl(340deg 100% 16%)),
-       color-stop(8%, hsl(340deg 100% 32%)),
-       color-stop(92%, hsl(340deg 100% 32%)),
-       to(hsl(340deg 100% 16%))
-     );
-    background: linear-gradient(
-       to left,
-       hsl(340deg 100% 16%) 0%,
-       hsl(340deg 100% 32%) 8%,
-       hsl(340deg 100% 32%) 92%,
-       hsl(340deg 100% 16%) 100%
-     );
-   }
-   
-   .front {
-    display: block;
-    position: relative;
-    padding: 12px 27px;
-    border-radius: 12px;
-    font-size: 1.1rem;
-    color: white;
-    background: hsl(345deg 100% 47%);
-    will-change: transform;
-    -webkit-transform: translateY(-4px);
-        -ms-transform: translateY(-4px);
-            transform: translateY(-4px);
-    -webkit-transition: -webkit-transform
-       600ms
-       cubic-bezier(.3, .7, .4, 1);
-    transition: -webkit-transform
-       600ms
-       cubic-bezier(.3, .7, .4, 1);
-    transition: transform
-       600ms
-       cubic-bezier(.3, .7, .4, 1);
-    transition: transform
-       600ms
-       cubic-bezier(.3, .7, .4, 1), -webkit-transform
-       600ms
-       cubic-bezier(.3, .7, .4, 1);
-   }
-   
-   button:hover {
-    -webkit-filter: brightness(110%);
-            filter: brightness(110%);
-   }
-   
-   button:hover .front {
-    -webkit-transform: translateY(-6px);
-        -ms-transform: translateY(-6px);
-            transform: translateY(-6px);
-    -webkit-transition: -webkit-transform
-       250ms
-       cubic-bezier(.3, .7, .4, 1.5);
-    transition: -webkit-transform
-       250ms
-       cubic-bezier(.3, .7, .4, 1.5);
-    transition: transform
-       250ms
-       cubic-bezier(.3, .7, .4, 1.5);
-    transition: transform
-       250ms
-       cubic-bezier(.3, .7, .4, 1.5), -webkit-transform
-       250ms
-       cubic-bezier(.3, .7, .4, 1.5);
-   }
-   
-   button:active .front {
-    -webkit-transform: translateY(-2px);
-        -ms-transform: translateY(-2px);
-            transform: translateY(-2px);
-    -webkit-transition: -webkit-transform 34ms;
-    transition: -webkit-transform 34ms;
-    transition: transform 34ms;
-    transition: transform 34ms, -webkit-transform 34ms;
-   }
-   
-   button:hover .shadow {
-    -webkit-transform: translateY(4px);
-        -ms-transform: translateY(4px);
-            transform: translateY(4px);
-    -webkit-transition: -webkit-transform
-       250ms
-       cubic-bezier(.3, .7, .4, 1.5);
-    transition: -webkit-transform
-       250ms
-       cubic-bezier(.3, .7, .4, 1.5);
-    transition: transform
-       250ms
-       cubic-bezier(.3, .7, .4, 1.5);
-    transition: transform
-       250ms
-       cubic-bezier(.3, .7, .4, 1.5), -webkit-transform
-       250ms
-       cubic-bezier(.3, .7, .4, 1.5);
-   }
-   
-   button:active .shadow {
-    -webkit-transform: translateY(1px);
-        -ms-transform: translateY(1px);
-            transform: translateY(1px);
-    -webkit-transition: -webkit-transform 34ms;
-    transition: -webkit-transform 34ms;
-    transition: transform 34ms;
-    transition: transform 34ms, -webkit-transform 34ms;
-   }
-   
-   button:focus:not(:focus-visible) {
-    outline: none;
-   }
-   .back-img{
-    width: 100%;
-    min-height: 250px;
-    background-image: url(../Nkarner/apteka/Final1.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+   position: relative;
+   border: none;
+   background: transparent;
+   padding: 0;
+   cursor: pointer;
+   outline-offset: 4px;
+   -webkit-transition: -webkit-filter 250ms;
+   transition: -webkit-filter 250ms;
+   transition: filter 250ms;
+   transition: filter 250ms, -webkit-filter 250ms;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+   -ms-touch-action: manipulation;
+   touch-action: manipulation;
+}
 
-   }
-   .info{
-    max-width: 350px;
-    width: 100%;
-    padding-inline: 10px;
-   }
-   .info h1{
-    font-size: 22px;
-    font-weight: 700;
-    color: white;
-   }
-   .into{
-    padding-inline: 10px;
-    max-width: 462px;
-    width: 100%;
-   }
-   .into span{
-    font-size: 16px;
-    font-weight: 400;
-    color: white;
-   }
-   .back-img1{
-    width: 100%;
-    min-height: 250px;
-    background-image: url(../Nkarner/besetka/5.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-   }
-   .back-img2{
-    width: 100%;
-    min-height: 250px;
-    background-image: url(../img/385538356_671190828451408_4463036686103529485_n.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-   }
-   .back-img3{
-    width: 100%;
-    min-height: 250px;
-    background-image: url(../Nkarner/spalni/TRFQ1932.JPG);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-   }
-   .back-img4{
-    width: 100%;
-    min-height: 250px;
-    background-image: url(../Nkarner/mijancq/p4.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-   }
-   .back-img5{
-    width: 100%;
-    min-height: 250px;
-    background-image: url(../Nkarner/hyuasenyak/IMG_1596.JPG);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-   }
+.shadow {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   border-radius: 12px;
+   background: hsl(0deg 0% 0% / 0.25);
+   will-change: transform;
+   -webkit-transform: translateY(2px);
+   -ms-transform: translateY(2px);
+   transform: translateY(2px);
+   -webkit-transition: -webkit-transform 600ms cubic-bezier(.3, .7, .4, 1);
+   transition: -webkit-transform 600ms cubic-bezier(.3, .7, .4, 1);
+   transition: transform 600ms cubic-bezier(.3, .7, .4, 1);
+   transition: transform 600ms cubic-bezier(.3, .7, .4, 1), -webkit-transform 600ms cubic-bezier(.3, .7, .4, 1);
+}
+
+.edge {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   border-radius: 12px;
+   background: -webkit-gradient(linear,
+         right top, left top,
+         from(hsl(340deg 100% 16%)),
+         color-stop(8%, hsl(340deg 100% 32%)),
+         color-stop(92%, hsl(340deg 100% 32%)),
+         to(hsl(340deg 100% 16%)));
+   background: linear-gradient(to left,
+         hsl(340deg 100% 16%) 0%,
+         hsl(340deg 100% 32%) 8%,
+         hsl(340deg 100% 32%) 92%,
+         hsl(340deg 100% 16%) 100%);
+}
+
+.front {
+   display: block;
+   position: relative;
+   padding: 12px 27px;
+   border-radius: 12px;
+   font-size: 1.1rem;
+   color: white;
+   background: hsl(345deg 100% 47%);
+   will-change: transform;
+   -webkit-transform: translateY(-4px);
+   -ms-transform: translateY(-4px);
+   transform: translateY(-4px);
+   -webkit-transition: -webkit-transform 600ms cubic-bezier(.3, .7, .4, 1);
+   transition: -webkit-transform 600ms cubic-bezier(.3, .7, .4, 1);
+   transition: transform 600ms cubic-bezier(.3, .7, .4, 1);
+   transition: transform 600ms cubic-bezier(.3, .7, .4, 1), -webkit-transform 600ms cubic-bezier(.3, .7, .4, 1);
+}
+
+button:hover {
+   -webkit-filter: brightness(110%);
+   filter: brightness(110%);
+}
+
+button:hover .front {
+   -webkit-transform: translateY(-6px);
+   -ms-transform: translateY(-6px);
+   transform: translateY(-6px);
+   -webkit-transition: -webkit-transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+   transition: -webkit-transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+   transition: transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+   transition: transform 250ms cubic-bezier(.3, .7, .4, 1.5), -webkit-transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+}
+
+button:active .front {
+   -webkit-transform: translateY(-2px);
+   -ms-transform: translateY(-2px);
+   transform: translateY(-2px);
+   -webkit-transition: -webkit-transform 34ms;
+   transition: -webkit-transform 34ms;
+   transition: transform 34ms;
+   transition: transform 34ms, -webkit-transform 34ms;
+}
+
+button:hover .shadow {
+   -webkit-transform: translateY(4px);
+   -ms-transform: translateY(4px);
+   transform: translateY(4px);
+   -webkit-transition: -webkit-transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+   transition: -webkit-transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+   transition: transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+   transition: transform 250ms cubic-bezier(.3, .7, .4, 1.5), -webkit-transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+}
+
+button:active .shadow {
+   -webkit-transform: translateY(1px);
+   -ms-transform: translateY(1px);
+   transform: translateY(1px);
+   -webkit-transition: -webkit-transform 34ms;
+   transition: -webkit-transform 34ms;
+   transition: transform 34ms;
+   transition: transform 34ms, -webkit-transform 34ms;
+}
+
+button:focus:not(:focus-visible) {
+   outline: none;
+}
+
+.back-img {
+   width: 100%;
+   min-height: 250px;
+   background-image: url(../Nkarner/apteka/Final1.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+
+.info {
+   max-width: 350px;
+   width: 100%;
+   padding-inline: 10px;
+}
+
+.info h1 {
+   font-size: 22px;
+   font-weight: 700;
+   color: white;
+}
+
+.into {
+   padding-inline: 10px;
+   max-width: 462px;
+   width: 100%;
+}
+
+.into span {
+   font-size: 16px;
+   font-weight: 400;
+   color: white;
+}
+
+.back-img1 {
+   width: 100%;
+   min-height: 250px;
+   background-image: url(../Nkarner/besetka/5.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.back-img2 {
+   width: 100%;
+   min-height: 250px;
+   background-image: url(../img/385538356_671190828451408_4463036686103529485_n.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.back-img3 {
+   width: 100%;
+   min-height: 250px;
+   background-image: url(../Nkarner/spalni/TRFQ1932.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.back-img4 {
+   width: 100%;
+   min-height: 250px;
+   background-image: url(../Nkarner/mijancq/p4.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.back-img5 {
+   width: 100%;
+   min-height: 250px;
+   background-image: url(../Nkarner/hyuasenyak/IMG_1596.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back-img6 {
+   width: 100%;
+   min-height: 250px;
+   background-image: url(../Nkarner/bazmoc/417.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+/* pharmachy css start */
+.contanet-pharmacy {
+   width: 100%;
+   padding-inline: 5%;
+   padding-top: 80px;
+   background: #540705;
+}
+
+.wrapper-pharm {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   gap: 50px;
+}
+
+.card {
+   width: 500px;
+   height: 450px;
+   -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.212);
+   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.212);
+   background: #540705;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   border-radius: 20px;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+   position: relative;
+   -webkit-transition: all .4s;
+   transition: all .4s;
+}
+.card::before {
+   content: '---Դեղատան կահույք---';
+   letter-spacing: 0.2em;
+   position: absolute;
+   bottom: 8px;
+   left: 20px;
+   color: rgb(51, 51, 51);
+   font-size: 0.8em;
+   font-weight: 700;
+}
+.card1::before {
+   content: '---Ամառանոցի Տաղավար---';
+   letter-spacing: 0.2em;
+   position: absolute;
+   bottom: 8px;
+   left: 20px;
+   color: rgb(51, 51, 51);
+   font-size: 0.8em;
+   font-weight: 700;
+}
+.card2::before {
+   content: '---Խոհանոցային Կահույք---';
+   letter-spacing: 0.2em;
+   position: absolute;
+   bottom: 8px;
+   left: 20px;
+   color: rgb(51, 51, 51);
+   font-size: 0.8em;
+   font-weight: 700;
+}
+.card3::before {
+   content: '---Ննջասենյակի Կահույք---';
+   letter-spacing: 0.2em;
+   position: absolute;
+   bottom: 8px;
+   left: 20px;
+   color: rgb(51, 51, 51);
+   font-size: 0.8em;
+   font-weight: 700;
+}
+.card4::before {
+   content: '---Միջանցքի Կահույք---';
+   letter-spacing: 0.2em;
+   position: absolute;
+   bottom: 8px;
+   left: 20px;
+   color: rgb(51, 51, 51);
+   font-size: 0.8em;
+   font-weight: 700;
+}
+.card5::before {
+   content: '---Հյուրասենյակի կահույք---';
+   letter-spacing: 0.2em;
+   position: absolute;
+   bottom: 8px;
+   left: 20px;
+   color: rgb(51, 51, 51);
+   font-size: 0.8em;
+   font-weight: 700;
+}
+.card6::before {
+   content: '---Փափուկ Կահույք---';
+   letter-spacing: 0.2em;
+   position: absolute;
+   bottom: 8px;
+   left: 20px;
+   color: rgb(51, 51, 51);
+   font-size: 0.8em;
+   font-weight: 700;
+}
+
+.card div {
+   width: 100%;
+   height: 100%;
+   border-radius: 20px;
+   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.212);
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.212);
+   cursor: pointer;
+   z-index: 10;
+   -webkit-transition: all .4s;
+   transition: all .4s;
+   background-color: #540705;
+}
+
+.card:hover div {
+   -webkit-transform: translateY(-30px);
+   -ms-transform: translateY(-30px);
+   transform: translateY(-30px);
+}
+
+.back1 {
+   background-image: url(../Nkarner/apteka/01apt.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.back2 {
+   background-image: url(../Nkarner/apteka/40253116.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.back3 {
+   background-image: url(../Nkarner/apteka/Final1.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.back4 {
+   background-image: url(../Nkarner/apteka/Genovska1.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.back5 {
+   background-image: url(../Nkarner/apteka/IMG_6572.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.back6 {
+   background-image: url(../Nkarner/apteka/IMG_6573.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.back7 {
+   background-image: url(../Nkarner/apteka/IMG_6575.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.back8 {
+   background-image: url(../Nkarner/apteka/IMG_6714.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.back9 {
+   background-image: url(../Nkarner/apteka/IMG_6715.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.back10 {
+   background-image: url(../Nkarner/apteka/IMG_6716.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.back11 {
+   background-image: url(../Nkarner/apteka/IMG_6717.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.back12 {
+   background-image: url(../Nkarner/apteka/IMG_6719.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back13 {
+   background-image: url(../Nkarner/apteka/IMG_6720.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back14 {
+   background-image: url(../Nkarner/apteka/IMG_6721.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back15 {
+   background-image: url(../Nkarner/apteka/IMG_6722.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back16 {
+   background-image: url(../Nkarner/apteka/IMG_6723.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back17 {
+   background-image: url(../Nkarner/apteka/IMG_6724.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back18 {
+   background-image: url(../Nkarner/apteka/IMG_6725.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.back20 {
+   background-image: url(../Nkarner/apteka/Laboratoire-Pharmacie-JeanCoutu-06-2021-05.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back21 {
+   background-image: url(../Nkarner/apteka/mebel-dlya-apteki24.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back22 {
+   background-image: url(../Nkarner/apteka/Pharmacy-Slide-002.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back23 {
+   background-image: url(../Nkarner/apteka/Pharmacy-Slider2.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back24 {
+   background-image: url(../Nkarner/apteka/Praktichnyj-shkaf.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back25 {
+   background-image: url(../Nkarner/apteka/torgovaya_mebel_dlya_apteki_t83_6.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back26 {
+   background-image: url(../Nkarner/apteka/Vybor-praktichnoj-mebeli.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back27 {
+   background-image: url(../Nkarner/apteka/Zelenaya-praktichnaya-mebel-dlya-apteki.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+/* pharmachy css end */
+
+
+/* pavilion css start */
+.back101{
+   background-image: url(../Nkarner/besetka/1.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back102{
+   background-image: url(../Nkarner/besetka/10.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back103{
+   background-image: url(../Nkarner/besetka/11.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back104{
+   background-image: url(../Nkarner/besetka/12.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back105{
+   background-image: url(../Nkarner/besetka/13.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back106{
+   background-image: url(../Nkarner/besetka/14.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back107{
+   background-image: url(../Nkarner/besetka/15.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back108{
+   background-image: url(../Nkarner/besetka/16.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back109{
+   background-image: url(../Nkarner/besetka/17.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back110{
+   background-image: url(../Nkarner/besetka/18.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back111{
+   background-image: url(../Nkarner/besetka/19.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back112{
+   background-image: url(../Nkarner/besetka/2.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back113{
+   background-image: url(../Nkarner/besetka/20.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back114{
+   background-image: url(../Nkarner/besetka/21.webp);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back115{
+   background-image: url(../Nkarner/besetka/22.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back116{
+   background-image: url(../Nkarner/besetka/23.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back117{
+   background-image: url(../Nkarner/besetka/24.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back118{
+   background-image: url(../Nkarner/besetka/25.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back120{
+   background-image: url(../Nkarner/besetka/26.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back121{
+   background-image: url(../Nkarner/besetka/27.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back122{
+   background-image: url(../Nkarner/besetka/28.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back123{
+   background-image: url(../Nkarner/besetka/29.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back124{
+   background-image: url(../Nkarner/besetka/3.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back125{
+   background-image: url(../Nkarner/besetka/30.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back126{
+   background-image: url(../Nkarner/besetka/31.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back127{
+   background-image: url(../Nkarner/besetka/4.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back128{
+   background-image: url(../Nkarner/besetka/5.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back129{
+   background-image: url(../Nkarner/besetka/6.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back130{
+   background-image: url(../Nkarner/besetka/7.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back131{
+   background-image: url(../Nkarner/besetka/8.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back132{
+   background-image: url(../Nkarner/besetka/9.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back01{
+   background-image: url(../img/new/20180322_163634.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back02{
+   background-image: url(../img/new/20180322_163707.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back03{
+   background-image: url(../img/new/20180328_081731.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back04{
+   background-image: url(../img/new/20180330_082159.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back05{
+   background-image: url(../img/new/20180404_134908.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back06{
+   background-image: url(../img/new/20180404_134923.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back07{
+   background-image: url(../img/new/20180404_134936.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back08{
+   background-image: url(../img/new/20180405_111053.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back09{
+   background-image: url(../img/new/20180410_191558.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back010{
+   background-image: url(../img/new/20180411_171448.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back011{
+   background-image: url(../img/new/20180412_184940.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back012{
+   background-image: url(../img/new/20180413_133707.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back013{
+   background-image: url(../img/new/20180413_133709.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back014{
+   background-image: url(../img/new/20180413_133939.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back015{
+   background-image: url(../img/new/20180414_123340.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back016{
+   background-image: url(../img/new/20180414_123405.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back017{
+   background-image: url(../img/new/20180418_110357.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back018{
+   background-image: url(../img/new/20180429_130653.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back019{
+   background-image: url(../img/new/20180523_191820.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+/* pavilion css end */
+/* kitchen start */
+.back300{
+   background-image: url(../Nkarner/kuxni/200.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back301{
+   background-image: url(../Nkarner/kuxni/201.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back302{
+   background-image: url(../Nkarner/kuxni/202.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back303{
+   background-image: url(../Nkarner/kuxni/203.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back304{
+   background-image: url(../Nkarner/kuxni/204.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back305{
+   background-image: url(../Nkarner/kuxni/205.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back306{
+   background-image: url(../Nkarner/kuxni/206.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back307{
+   background-image: url(../Nkarner/kuxni/BWYU3596.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back308{
+   background-image: url(../Nkarner/kuxni/CKZW5837.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back309{
+   background-image: url(../Nkarner/kuxni/EBHS0389.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back310{
+   background-image: url(../Nkarner/kuxni/ETJJ3309.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back311{
+   background-image: url(../Nkarner/kuxni/FBBT4456.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back312{
+   background-image: url(../Nkarner/kuxni/FZCK4944.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back313{
+   background-image: url(../Nkarner/kuxni//HOHC9142.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back314{
+   background-image: url(../Nkarner/kuxni/IMG_0172.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back315{
+   background-image: url(../Nkarner/kuxni/IMG_0243.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back316{
+   background-image: url(../Nkarner/kuxni/IMG_0270.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back317{
+   background-image: url(../Nkarner/kuxni/IMG_0271.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back318{
+   background-image: url(../Nkarner/kuxni/IMG_0303.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back319{
+   background-image: url(../Nkarner/kuxni/IMG_0305.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back320{
+   background-image: url(../Nkarner/kuxni/IMG_0314.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back321{
+   background-image: url(../Nkarner/kuxni/IMG_0315.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back322{
+   background-image: url(../Nkarner/kuxni/IMG_0316.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back323{
+   background-image: url(../Nkarner/kuxni/IMG_0317.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back324{
+   background-image: url(../Nkarner/kuxni/IMG_0318.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back325{
+   background-image: url(../Nkarner/kuxni/IMG_0339.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back326{
+   background-image: url(../Nkarner/kuxni/IMG_0341.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back327{
+   background-image: url(../Nkarner/kuxni/IMG_0343.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back328{
+   background-image: url(../Nkarner/kuxni/IMG_0433.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back329{
+   background-image: url(../Nkarner/kuxni/IMG_0440.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back330{
+   background-image: url(../Nkarner/kuxni/IMG_0776.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back331{
+   background-image: url(../Nkarner/kuxni/IMG_0777.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back332{
+   background-image: url(../Nkarner/kuxni/IMG_0813.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back333{
+   background-image: url(../Nkarner/kuxni/IMG_0814.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back334{
+   background-image: url(../Nkarner/kuxni/IMG_0815.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back335{
+   background-image: url(../Nkarner/kuxni/IMG_0817.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back336{
+   background-image: url(../Nkarner/kuxni/IMG_0818.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back337{
+   background-image: url(../Nkarner/kuxni/IMG_0978.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back338{
+   background-image: url(../Nkarner/kuxni/IMG_0979.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back339{
+   background-image: url(../Nkarner/kuxni/IMG_1059.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back340{
+   background-image: url(../Nkarner/kuxni/IMG_1060.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back341{
+   background-image: url(../Nkarner/kuxni/IMG_1138.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back342{
+   background-image: url(../Nkarner/kuxni/IMG_1139.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back343{
+   background-image: url(../Nkarner/kuxni/IMG_1150.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back344{
+   background-image: url(../Nkarner/kuxni/IMG_1151.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back345{
+   background-image: url(../Nkarner/kuxni/IMG_1434.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back346{
+   background-image: url(../Nkarner/kuxni/IMG_1435.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back347{
+   background-image: url(../Nkarner/kuxni/IMG_1446.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back348{
+   background-image: url(../Nkarner/kuxni/IMG_1452.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back349{
+   background-image: url(../Nkarner/kuxni/IMG_1453.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back350{
+   background-image: url(../Nkarner/kuxni/IMG_1505.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back351{
+   background-image: url(../Nkarner/kuxni/IMG_1506.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back352{
+   background-image: url(../Nkarner/kuxni/IMG_1507.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back353{
+   background-image: url(../Nkarner/kuxni/IMG_1509.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back354{
+   background-image: url(../Nkarner/kuxni/IMG_1515.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back355{
+   background-image: url(../Nkarner/kuxni/IMG_1517.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back356{
+   background-image: url(../Nkarner/kuxni/IMG_1695.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back357{
+   background-image: url(../Nkarner/kuxni/IMG_1847.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back358{
+   background-image: url(../Nkarner/kuxni/IMG_1848.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back359{
+   background-image: url(../Nkarner/kuxni/IMG_1849.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back360{
+   background-image: url(../Nkarner/kuxni/IMG_1850.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back361{
+   background-image: url(../Nkarner/kuxni/IMG_1851.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back362{
+   background-image: url(../Nkarner/kuxni/IMG_1852.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back363{
+   background-image: url(../Nkarner/kuxni/IMG_1855.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back364{
+   background-image: url(../Nkarner/kuxni/JNEQ9335.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back365{
+   background-image: url(../Nkarner/kuxni/KEDJ3999.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back366{
+   background-image: url(../Nkarner/kuxni/KQJU2122.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back367{
+   background-image: url(../Nkarner/kuxni/LGFO7303.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back368{
+   background-image: url(../Nkarner/kuxni/MNGW3029.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back369{
+   background-image: url(../Nkarner/kuxni/MVAR7924.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back370{
+   background-image: url(../Nkarner/kuxni/NOJP4317.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back371{
+   background-image: url(../Nkarner/kuxni/NQHD3757.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back372{
+   background-image: url(../Nkarner/kuxni/NQQG5779.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back373{
+   background-image: url(../Nkarner/kuxni/POHE1333.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back374{
+   background-image: url(../Nkarner/kuxni/QVGW7802.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back375{
+   background-image: url(../Nkarner/kuxni/UJZC8588.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back376{
+   background-image: url(../Nkarner/kuxni/WBNH8180.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back377{
+   background-image: url(../Nkarner/kuxni/XFET5551.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back378{
+   background-image: url(../Nkarner/kuxni/XNVT6454.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back379{
+   background-image: url(../Nkarner/kuxni/YKFK7294.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back380{
+   background-image: url(../Nkarner/kuxni/Фото0033.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back381{
+   background-image: url(../Nkarner/kuxni/Фото0035.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back382{
+   background-image: url(../Nkarner/kuxni/Фото0038.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back383{
+   background-image: url(../Nkarner/kuxni/Фото0059.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+
+
+
+/* kitchen end */
+
+/* bedroom start */
+.back500{
+   background-image: url(../Nkarner/spalni/300.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back501{
+   background-image: url(../Nkarner/spalni/301.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back502{
+   background-image: url(../Nkarner/spalni/302.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back503{
+   background-image: url(../Nkarner/spalni/303.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back504{
+   background-image: url(../Nkarner/spalni/304.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back505{
+   background-image: url(../Nkarner/spalni/305.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back506{
+   background-image: url(../Nkarner/spalni/306.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back507{
+   background-image: url(../Nkarner/spalni/307.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back508{
+   background-image: url(../Nkarner/spalni/308.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back509{
+   background-image: url(../Nkarner/spalni/309.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back510{
+   background-image: url(../Nkarner/spalni/310.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back511{
+   background-image: url(../Nkarner/spalni/311.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back512{
+   background-image: url(../Nkarner/spalni/312.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back513{
+   background-image: url(../Nkarner/spalni/313.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back514{
+   background-image: url(../Nkarner/spalni/314.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back515{
+   background-image: url(../Nkarner/spalni/315.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back516{
+   background-image: url(../Nkarner/spalni/316.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back517{
+   background-image: url(../Nkarner/spalni/317.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back518{
+   background-image: url(../Nkarner/spalni/318.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back519{
+   background-image: url(../Nkarner/spalni/319.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back520{
+   background-image: url(../Nkarner/spalni/320.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back521{
+   background-image: url(../Nkarner/spalni/321.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back522{
+   background-image: url(../Nkarner/spalni/322.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back523{
+   background-image: url(../Nkarner/spalni/323.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back524{
+   background-image: url(../Nkarner/spalni/324.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back525{
+   background-image: url(../Nkarner/spalni/325.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back526{
+   background-image: url(../Nkarner/spalni/326.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back527{
+   background-image: url(../Nkarner/spalni/327.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back528{
+   background-image: url(../Nkarner/spalni/AZKC0519.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back529{
+   background-image: url(../Nkarner/spalni/CWXQ4499.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back530{
+   background-image: url(../Nkarner/spalni/DPNB1456.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back531{
+   background-image: url(../Nkarner/spalni/DSC04705.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back532{
+   background-image: url(../Nkarner/spalni/DSC04706.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back533{
+   background-image: url(../Nkarner/spalni/DSC04710.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back534{
+   background-image: url(../Nkarner/spalni/DSC04721.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back535{
+   background-image: url(../Nkarner/spalni/DVXM8785.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back536{
+   background-image: url(../Nkarner/spalni/EAPM4230.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back537{
+   background-image: url(../Nkarner/spalni/ERFL2724.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back538{
+   background-image: url(../Nkarner/spalni/FIFN7493.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back539{
+   background-image: url(../Nkarner/spalni/FNDD2410.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back540{
+   background-image: url(../Nkarner/spalni/FRBN4980.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back541{
+   background-image: url(../Nkarner/spalni/FSDY4717.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back542{
+   background-image: url(../Nkarner/spalni/GALF9218.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back543{
+   background-image: url(../Nkarner/spalni/HRXG5032.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back544{
+   background-image: url(../Nkarner/spalni/IMG_0018.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back545{
+   background-image: url(../Nkarner/spalni/IMG_0019.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back546{
+   background-image: url(../Nkarner/spalni/IMG_0020.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back547{
+   background-image: url(../Nkarner/spalni/IMG_0388.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back548{
+   background-image: url(../Nkarner/spalni/IMG_0392.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back549{
+   background-image: url(../Nkarner/spalni/IMG_0394.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back550{
+   background-image: url(../Nkarner/spalni/IMG_0415.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back551{
+   background-image: url(../Nkarner/spalni/IMG_0417.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back552{
+   background-image: url(../Nkarner/spalni/IMG_0418.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back553{
+   background-image: url(../Nkarner/spalni/IMG_1383.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back554{
+   background-image: url(../Nkarner/spalni/IMG_1385.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back555{
+   background-image: url(../Nkarner/spalni/IMG_1386.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back556{
+   background-image: url(../Nkarner/spalni/IMG_6665.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back557{
+   background-image: url(../Nkarner/spalni/IMG_6674.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back558{
+   background-image: url(../Nkarner/spalni/IMG_6675.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back559{
+   background-image: url(../Nkarner/spalni/IMG_6678.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back560{
+   background-image: url(../Nkarner/spalni/IMLF8966.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back561{
+   background-image: url(../Nkarner/spalni/KNJI2554.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back562{
+   background-image: url(../Nkarner/spalni/PBAF6190.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back563{
+   background-image: url(../Nkarner/spalni/PZOW1022.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back564{
+   background-image: url(../Nkarner/spalni/QNVP6015.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back565{
+   background-image: url(../Nkarner/spalni/QYJP2965.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back566{
+   background-image: url(../Nkarner/spalni/TCAB5909.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back567{
+   background-image: url(../Nkarner/spalni/TFQB6345.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back568{
+   background-image: url(../Nkarner/spalni/TRFQ1932.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back569{
+   background-image: url(../Nkarner/spalni/TUBV7606.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back570{
+   background-image: url(../Nkarner/spalni/UMQD7219.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back571{
+   background-image: url(../Nkarner/spalni/UVTJ2099.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back572{
+   background-image: url(../Nkarner/spalni/VOPJ4339.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back573{
+   background-image: url(../Nkarner/spalni/VVAE5683.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back574{
+   background-image: url(../Nkarner/spalni/VVGB0642.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back575{
+   background-image: url(../Nkarner/spalni//WRGC6362.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back576{
+   background-image: url(../Nkarner/spalni//XJXB7647.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back577{
+   background-image: url(../Nkarner/spalni/XMJM9406.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back578{
+   background-image: url(../Nkarner/spalni/XSZM0750.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back579{
+   background-image: url(../Nkarner/spalni/XWQS2926.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back580{
+   background-image: url(../Nkarner/spalni/YGYT0204.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back581{
+   background-image: url(../Nkarner/spalni/Фото0051.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back582{
+   background-image: url(../Nkarner/spalni/Фото0052.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back583{
+   background-image: url(../Nkarner/spalni/Фото0055.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+
+
+/* bedroom end */
+/* corridor start */
+.back600{
+   background-image: url(../Nkarner/mijancq/AKDC2070.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back601{
+   background-image: url(../Nkarner/mijancq/IMG_0284.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back602{
+   background-image: url(../Nkarner/mijancq/IMG_0285.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back603{
+   background-image: url(../Nkarner/mijancq/IMG_0289.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back604{
+   background-image: url(../Nkarner/mijancq/IMG_0295.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back605{
+   background-image: url(../Nkarner/mijancq/IMG_0309.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back606{
+   background-image: url(../Nkarner/mijancq/IMG_0336.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back607{
+   background-image: url(../Nkarner/mijancq/IMG_0338.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back608{
+   background-image: url(../Nkarner/mijancq/IMG_1554.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back609{
+   background-image: url(../Nkarner/mijancq/p11.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back610{
+   background-image: url(../Nkarner/mijancq/p3.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back611{
+   background-image: url(../Nkarner/mijancq/p4.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+/* corridor end */
+/* livingroom start */
+.back700{
+   background-image: url(../Nkarner/hyuasenyak/ALEGRO\ ASH\ LIGHT\ LR\ SET-590x443.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back701{
+   background-image: url(../Nkarner/hyuasenyak/COUY7297.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back702{
+   background-image: url(../Nkarner/hyuasenyak/DENVER\ MILK\ OAK\ LR\ SET-590x443.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back703{
+   background-image: url(../Nkarner/hyuasenyak/g19.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back704{
+   background-image: url(../Nkarner/hyuasenyak/IMG_1586.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back705{
+   background-image: url(../Nkarner/hyuasenyak/IMG_1596.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back706{
+   background-image: url(../Nkarner/hyuasenyak/IMG_1597.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back707{
+   background-image: url(../Nkarner/hyuasenyak/IMG_1685.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back708{
+   background-image: url(../Nkarner/hyuasenyak/IMG_1687.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back709{
+   background-image: url(../Nkarner/hyuasenyak/IMG_1688.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back710{
+   background-image: url(../Nkarner/hyuasenyak/img_1920x_5f15ac7c15310.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back711{
+   background-image: url(../Nkarner/hyuasenyak/img_1920x_5f15ac95295da.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back712{
+   background-image: url(../Nkarner/hyuasenyak/JERSEY\ OAK\ CRAFT\ GREY-9-590x443.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back713{
+   background-image: url(../Nkarner/hyuasenyak/MARK\ TEAK\ -\ OAK\ SONOMA-590x443.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back714{
+   background-image: url(../Nkarner/hyuasenyak/PGQG6160.JPG);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back715{
+   background-image: url(../Nkarner/hyuasenyak/slide_s_1517571999_4192.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back716{
+   background-image: url(../Nkarner/hyuasenyak/slide_s_1519572610_6907.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back717{
+   background-image: url(../Nkarner/hyuasenyak/slide_s_1521050990_2431.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back718{
+   background-image: url(../Nkarner/hyuasenyak/slide_s_1523998263_1649.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back719{
+   background-image: url(../Nkarner/hyuasenyak/slide_s_1523998263_4113.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back720{
+   background-image: url(../Nkarner/hyuasenyak/slide_s_1523998308_4784.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+/* livingroom end */
+
+/* soft start */
+.back800{
+   background-image: url(../Nkarner/bazmoc/400.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back801{
+   background-image: url(../Nkarner/bazmoc/401.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back802{
+   background-image: url(../Nkarner/bazmoc/402.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back803{
+   background-image: url(../Nkarner/bazmoc/403.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back804{
+   background-image: url(../Nkarner/bazmoc/404.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back805{
+   background-image: url(../Nkarner/bazmoc/405.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back806{
+   background-image: url(../Nkarner/bazmoc/406.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back807{
+   background-image: url(../Nkarner/bazmoc/407.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back808{
+   background-image: url(../Nkarner/bazmoc/408.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back809{
+   background-image: url(../Nkarner/bazmoc/409.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back810{
+   background-image: url(../Nkarner/bazmoc/410.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back811{
+   background-image: url(../Nkarner/bazmoc/411.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back812{
+   background-image: url(../Nkarner/bazmoc/412.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back813{
+   background-image: url(../Nkarner/bazmoc/413.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back814{
+   background-image: url(../Nkarner/bazmoc/414.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back815{
+   background-image: url(../Nkarner/bazmoc/415.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back816{
+   background-image: url(../Nkarner/bazmoc/416.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back817{
+   background-image: url(../Nkarner/bazmoc/417.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back818{
+   background-image: url(../Nkarner/bazmoc/418.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back819{
+   background-image: url(../Nkarner/bazmoc/419.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back820{
+   background-image: url(../Nkarner/bazmoc/420.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back821{
+   background-image: url(../Nkarner/bazmoc/421.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.back822{
+   background-image: url(../Nkarner/bazmoc/422.jfif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+/* soft end */
